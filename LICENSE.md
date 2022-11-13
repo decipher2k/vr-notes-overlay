@@ -2,7 +2,7 @@ Licenses
 ========
 
 The original code and assets in this project are "Copyright © Daniel Friesen - 2019" and are released under the [MPL-2.0](LICENSE-MPL-2.0.md) license.
-
+The VR Notes Overlay mod is (c) Dennis M. Heine - 2022 and is released under the [MPL-2.0](LICENSE-MPL-2.0.md) license.
 This project uses resources from various other sources that have separate licenses.
 
 `Assets/SteamVR`, `Assets/SteamVR_Input`, and `Assets/OpenVR` contain [SteamVR_Unity_Plugin](https://github.com/ValveSoftware/steamvr_unity_plugin) and [OpenVR](https://github.com/ValveSoftware/openvr) code provided by Valve Inc. under the [3-Clause BSD](https://github.com/ValveSoftware/steamvr_unity_plugin/blob/master/LICENSE) license.
