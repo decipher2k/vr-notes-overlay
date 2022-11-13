@@ -6,7 +6,7 @@ Simply enter some text to be displayed, and hit "Set". It will immediately show 
 
 ## Download:<br>
 
-[https://github.com/decipher2k/vr-notes-overlay/releases/tag/v0.1](https://github.com/decipher2k/vr-notes-overlay/releases/tag/v0.1)
+[https://github.com/decipher2k/vr-notes-overlay/releases](https://github.com/decipher2k/vr-notes-overlay/releases)
 <br>
 <br>
 
