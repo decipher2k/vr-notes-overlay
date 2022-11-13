@@ -230,9 +230,11 @@ namespace EVRC
 
         private void SetIsEliteDangerousRunning(bool running)
         {
-            if (IsEliteDangerousRunning == running) return;
-            IsEliteDangerousRunning = running;
-
+            
+            
+            if (IsEliteDangerousRunning == true) return;
+            //IsEliteDangerousRunning = running;
+            IsEliteDangerousRunning = true;
             if (IsEliteDangerousRunning)
             {
                 LoadHUDColorMatrix(); // Reload the HUD color matrix on start

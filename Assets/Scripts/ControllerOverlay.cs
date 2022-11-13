@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Drawing;
+using UnityEngine;
 using Valve.VR;
 
 namespace EVRC
@@ -34,6 +35,11 @@ namespace EVRC
             {
                 Init();
             }
+            string fontName = "Cambria";
+            System.Drawing.Font testFont = new System.Drawing.Font(System.Drawing.FontFamily.GenericMonospace, 400.0f, System.Drawing.FontStyle.Regular,
+                                     GraphicsUnit.Pixel);
+            texture = new Texture2D(2,2 );
+            ((Texture2D)texture).LoadImage(TxtToImage.DrawText(ButtonHandler.note, testFont, System.Drawing.Color.Orange, 3000,".\\"));
 
             if (texture != null && handle != OpenVR.k_ulOverlayHandleInvalid)
             {
@@ -45,8 +51,10 @@ namespace EVRC
                     o.SetFullTexture(texture);
                     lastTexture = texture;
                 }
-                o.SetColorWithAlpha(Color.white);
+                o.SetColorWithAlpha(UnityEngine.Color.white);
                 o.SetWidthInMeters(.05f);
+
+                
 
                 o.SetInputMethod(VROverlayInputMethod.None);
                 o.SetMouseScale(1, 1);

@@ -199,20 +199,8 @@ namespace EVRC
 
         void SetMode(CockpitMode mode)
         {
-            gameNotRunning?.SetActive(mode.HasFlag(CockpitMode.GameNotRunning));
-            menuMode?.SetActive(mode.HasFlag(CockpitMode.MenuMode));
-            map?.SetActive(mode.HasFlag(CockpitMode.Map));
-            stationServices?.SetActive(mode.HasFlag(CockpitMode.StationServices));
-            cockpit?.SetActive(mode.HasFlag(CockpitMode.Cockpit));
-            shipOnlyCockpit?.SetActive(mode.HasFlag(CockpitMode.Cockpit) && mode.HasFlag(CockpitMode.InShip));
-            mainShipOnlyCockpit?.SetActive(mode.HasFlag(CockpitMode.Cockpit) && mode.HasFlag(CockpitMode.InMainShip));
-            fighterOnlyCockpit?.SetActive(mode.HasFlag(CockpitMode.Cockpit) && mode.HasFlag(CockpitMode.InFighter));
-            srvOnlyCockpit?.SetActive(mode.HasFlag(CockpitMode.Cockpit) && mode.HasFlag(CockpitMode.InSRV));
-            fssMode?.SetActive(mode.HasFlag(CockpitMode.FSSMode));
-            dssMode?.SetActive(mode.HasFlag(CockpitMode.DSSMode));
+            
 
-            Mode = mode;
-            ModeChanged.Send(Mode);
         }
     }
 }

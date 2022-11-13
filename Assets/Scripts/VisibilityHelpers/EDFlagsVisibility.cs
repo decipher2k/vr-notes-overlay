@@ -51,7 +51,7 @@ namespace EVRC
 
         public void Refresh()
         {
-            target.SetActive(GetVisibility());
+           // target.SetActive(GetVisibility());
         }
 
         public bool GetVisibility()

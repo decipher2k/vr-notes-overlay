@@ -41,19 +41,19 @@ namespace EVRC
 
         void OnDisable()
         {
-            Shutdown();
-            SteamVR_Events.System(EVREventType.VREvent_Quit).Remove(OnQuit);
+         //   Shutdown();
+          //  SteamVR_Events.System(EVREventType.VREvent_Quit).Remove(OnQuit);
         }
 
         void OnQuit(VREvent_t ev)
         {
-            enabled = false;
+          //  enabled = false;
 
-            Debug.Log("OpenVR Quit event received, quitting");
+         //   Debug.Log("OpenVR Quit event received, quitting");
 #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
+         //   UnityEditor.EditorApplication.isPlaying = false;
 #else
-		    Application.Quit();
+		//    Application.Quit();
 #endif
         }
 
@@ -70,7 +70,7 @@ namespace EVRC
 
         public void Shutdown()
         {
-            DisconnectFromVRRuntime();
+          //  DisconnectFromVRRuntime();
         }
 
         private bool ConnectToVRRuntime()

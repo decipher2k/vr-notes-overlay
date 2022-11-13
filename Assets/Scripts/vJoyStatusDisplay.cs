@@ -37,7 +37,8 @@ namespace EVRC
         {
             if (notInstalled)
             {
-                notInstalled.SetActive(status == VJoyStatus.NotInstalled);
+                //notInstalled.SetActive(status == VJoyStatus.NotInstalled);
+                notInstalled.SetActive(true);
             }
             if (versionMismatch)
             {
